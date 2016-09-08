@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/vue.js"></script>
+    <title>测试Vuejs初始化</title>
+</head>
+<body>
+
+<div class="app">
+    div1,initial data is : {{message}}
+</div>
+
+<div class="app">
+    <!--第二个符合el表达式的标签的数据没有进行绑定-->
+    div2,initial data is : {{message}}
+</div>
+
+</body>
+
+<script>
+    new Vue({
+        el:'.app',
+        data:{
+            message: 'hello world'
+        }
+    });
+</script>
+</html>

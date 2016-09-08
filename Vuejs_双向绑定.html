@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <script src="js/vue.js"></script>
-    <title>测试Vuejs初始化</title>
+    <title>Vuejs_双向绑定</title>
 </head>
 <body>
 
 <div id="app">
-    initial data is : {{message}}
+    <p>Your input data is: {{message}}</p>
+    <input v-model="message">
 </div>
 
 </body>
@@ -17,7 +18,7 @@
     new Vue({
         el:'#app',
         data:{
-            message: 'hello world'
+            message:'hello world'
         }
     });
 </script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/vue.js"></script>
+    <title>Vuejs_渲染列表</title>
+</head>
+<body>
+
+<div id="app">
+    <p v-for="todo in todos">
+        {{todo.text}}
+    </p>
+
+</div>
+
+</body>
+
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            todos:[
+                {'text':'text in line 1'},
+                {'text':'text in line 2'},
+                {'text':'text in line 3'}
+            ],
+            todos1:[
+                {'text':'text of todos1 in line1'},
+                {'text':'text of todos1 in line2'}
+            ]
+        }
+    });
+
+</script>
+</html>
