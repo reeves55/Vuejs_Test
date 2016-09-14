@@ -11,4 +11,5 @@ Vue.js技术体现了以数据为中心的理念，网页展示属于数据，�
 很多地方。所以，视图局部变化、小面积频繁变化，使用js来更新视图，数据接口由服务器提供。
 
 [Vue.js官网](http://cn.vuejs.org/)
+
 [Jquery CDN](http://www.bootcdn.cn/jquery/)
